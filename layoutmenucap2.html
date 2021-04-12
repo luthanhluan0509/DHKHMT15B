@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        background-color: aqua;
+    }
+    
+    li {
+        list-style-type: none;
+        display: inline;
+        margin-right: 20px;
+        font-size: 25px;
+    }
+    
+    li>ul {
+        display: none;
+    }
+    
+    a:link {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        color: brown;
+        text-decoration: none;
+    }
+    
+    li:hover ul {
+        display: block;
+        position: absolute;
+        left: 200px;
+        background-color: rgb(44, 189, 68);
+        margin: 0;
+    }
+    
+    li:hover ul li a {
+        display: block;
+        margin-left: -30px;
+    }
+    
+    header {
+        background-color: darkorchid;
+        display: inline;
+        top: 100px;
+        position: absolute;
+        width: 100%;
+    }
+    
+    li>ul {
+        display: none;
+    }
+    
+    li:hover ul {
+        display: block;
+        position: absolute;
+        left: 200px;
+        background-color: antiquewhite;
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a>
+                <ul>
+                    <li><a href="#">engineaering</a> </li>
+                    <li><a href="#">Telecom</a></li>
+                    <li><a href="#">Finance</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Serveice</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <ul>
+            <li><a href="#"> Home</a></li>
+            <li><a href="#">Introdution</a></li>
+            <li><a href="#">Portfolio</a>
+                <ul>
+                    <li><a href="#"> Photograph</a></li>
+                    <li><a href="#">Wep & user inter face design</a></li>
+                </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+</body>
+
+</html>
